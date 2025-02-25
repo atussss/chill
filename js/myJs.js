@@ -19,11 +19,12 @@ $(document).ready(function ()  {
   setTimeout(function () {
     firstQuestion();
     $(".spinner").fadeOut();
-    $("#preloader").delay(350).fadeOut("slow");
-    $("body").delay(350).css({
+    $("#preloader").delay(150).fadeOut("fast"); // Giảm thời gian delay
+    $("body").delay(150).css({
       overflow: "visible",
     });
-  }, 600);
+}, 300);  // Thay vì 600, giảm xuống 300
+
 
   $("#text3").html(textConfig.text3);
   $("#text4").html(textConfig.text4);
